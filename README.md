@@ -8,7 +8,7 @@ Integrantes do grupo:
 
 [João Gabriel Gretti de Lima](https://github.com/JoaoGretti) - 2649012
 
-Rafael Romanelo -
+[Rafael Romanelo](https://github.com/RomasRG) -
 
 [Tadashi Bello Nagashima](https://github.com/tadashinagashima) - 2677873
 
