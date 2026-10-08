@@ -7,7 +7,7 @@
 | RF01 |              O usuário deve acessar um sistema de login.                  |  Média     |    RF12     |
 | RF02 |         O usuário deve poder visualizar os anúncios presentes.            |  Alta      |    RF25     |
 | RF03 |     O usuário deve poder interagir com os anúncios disponibilizados.      |  Baixa     |     -       |
-| RF04 |         O usuário deve poder entrar em contato com os anunciantes.        |  Alta      |             |
+| RF04 |         O usuário deve poder entrar em contato com os anunciantes.        |  Alta      |     -       |
 
 <div style="text-align: center">
 <p>Tabela 1: Requisitos Funcionais</p>
