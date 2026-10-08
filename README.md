@@ -6,6 +6,8 @@ Integrantes do grupo:
 
 [Bruno Ferreira de Lima](https://github.com/BrunoFerreira-56) - 2648075
 
+[Guilherme Baldo Gonçalves](https://github.com/Guilherme-Baldo) - 2564165
+
 [João Gabriel Gretti de Lima](https://github.com/JoaoGretti) - 2649012
 
 [Rafael Romanelo](https://github.com/RomasRG) - 2601133
