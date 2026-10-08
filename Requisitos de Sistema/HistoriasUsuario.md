@@ -1,8 +1,6 @@
 
 # 1. História de Usuário
 
-A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas. 
-
 <table>
     <thead>
         <tr style="background-color: purple; color: white" >
@@ -25,16 +23,16 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">13</td>
         </tr>
         <tr>
-            <span id="ustory-01"></span>
+            <span id="ustory-02"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US02</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu, como usuário regular, desejo ter um perfil para interagir com os anunciantes</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>As informações do usuário devem estar evidentes</li><li> O perfil dos anunciantes deve ser público</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>As informações do usuário devem estar evidentes</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"> Baixa </td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF10</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">2</td>
         </tr>
         <tr>
-            <span id="ustory-01"></span>
+            <span id="ustory-03"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US03</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu,como usuário regular, desejo poder pesquisar um item na barra de busca para filtrar apenas o que desejo comprar</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>A barra de pesquisa deve retornar os produtos mais próximos ao escrito</li><li>A barra de pesquisa deve permanecer fixa na tela</li></ol></td>
@@ -42,10 +40,22 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
         </tr>
+        <tr>
+            <span id="ustory-04"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US04</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu,como usuário regular, desejo poder interagir com anunciantes via chat de texto</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O chat de mensagem deve estar disponível apenas para anunciantes os quais tenho contato por demonstrar interesse no produto</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
+        </tr>
+        <tr>
+            <span id="ustory-05"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US05</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu,como anunciante, desejo criar um perfil para postar meus produtos no sistema.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>As informações do anunciante devem estar evidentes</li><li> O perfil dos anunciantes deve ser público</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
+        </tr>
 </table>
-
-<div style="text-align: center">
-<p>Tabela 3: História de Usuário</p>
-</div>
-
-## 5. Referências bibliográficas
