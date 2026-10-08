@@ -8,9 +8,6 @@
 | RF02 |         O usuário deve poder visualizar os anúncios presentes.            |  Alta      |    RF25     |
 | RF03 |     O usuário deve poder interagir com os anúncios disponibilizados.      |  Baixa     |     -       |
 | RF04 |         O usuário deve poder entrar em contato com os anunciantes.        |  Alta      |             |
-| RF05 |        O usuário deve poder escolher a dificuldade de suas lições.        |            |             |
-| RF06 |       O usuário deve poder determinar metas diárias a ser comprida.       |            |             |
-
 
 <div style="text-align: center">
 <p>Tabela 1: Requisitos Funcionais</p>
