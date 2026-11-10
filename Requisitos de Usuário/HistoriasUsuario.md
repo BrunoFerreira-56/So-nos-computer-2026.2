@@ -16,7 +16,7 @@
             <span id="ustory-01"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US01</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu, como usuário regular ou anunciante, quero fazer login com meu e-mail institucional para acessar o marketplace com a minha conta.</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O cadastro e o login só aceitam e-mail institucional; qualquer outro e-mail é recusado com uma mensagem explicando o motivo.</li><li>Com credenciais válidas, o usuário entra no sistema.</li><li>Com credenciais inválidas, o sistema exibe uma mensagem de erro e mantém o usuário na tela de login.</li><li>O login funciona tanto no aplicativo quanto no site.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O cadastro e o login só aceitam e-mail institucional; qualquer outro e-mail é recusado com uma mensagem explicando o motivo.</li><li>No cadastro, o usuário informa o campus da UTFPR em que estuda.</li><li>Com credenciais válidas, o usuário entra no sistema.</li><li>Com credenciais inválidas, o sistema exibe uma mensagem de erro e mantém o usuário na tela de login.</li><li>O login funciona tanto no aplicativo quanto no site.</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF01, RNF01</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">8</td>
@@ -61,7 +61,7 @@
             <span id="ustory-06"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US06</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu, como anunciante, quero cadastrar um novo anúncio para divulgar um produto novo ou usado.</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O usuário logado consegue acessar o formulário de criação de anúncio.</li><li>Se todos os campos obrigatórios estiverem preenchidos, o anúncio é criado e passa a aparecer na listagem.</li><li>Se faltar algum campo obrigatório, o sistema aponta qual está faltando e não cria o anúncio.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>Qualquer usuário logado consegue acessar o formulário de criação de anúncio e, ao publicar, passa a ser o anunciante daquele anúncio.</li><li>Se todos os campos obrigatórios estiverem preenchidos, o anúncio é criado e passa a aparecer na listagem.</li><li>Se faltar algum campo obrigatório, o sistema aponta qual está faltando e não cria o anúncio.</li><li>O anúncio criado fica vinculado ao campus do anunciante.</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF06</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">8</td>
@@ -78,8 +78,8 @@
         <tr>
             <span id="ustory-08"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US08</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu, como usuário regular, quero filtrar os anúncios por campus da UTFPR para ver apenas os de interesse na minha região.</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema oferece um filtro com os campus da UTFPR.</li><li>Ao selecionar um campus, a listagem mostra somente os anúncios daquele campus.</li><li>O usuário pode remover o filtro e voltar a ver todos os anúncios.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu, como usuário regular, quero visualizar apenas os anúncios do meu campus da UTFPR para ver somente os de interesse na minha região.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>A listagem do hub exibe somente anúncios do campus informado pelo usuário no cadastro.</li><li>A busca por termos-chave retorna somente anúncios do campus do usuário.</li><li>Anúncios de outros campus não são exibidos ao usuário.</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF08</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">3</td>
@@ -88,7 +88,7 @@
             <span id="ustory-09"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US09</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu, como usuário regular, quero buscar anúncios por termos-chave para encontrar rapidamente o que procuro.</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema oferece um campo de busca acessível no hub.</li><li>Ao buscar um termo, a listagem exibe apenas os anúncios relacionados a ele.</li><li>Se nenhum anúncio corresponder, o sistema informa que não há resultados.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema oferece um campo de busca acessível no hub.</li><li>Ao buscar um termo, a listagem exibe apenas os anúncios cujo título ou descrição contenham o termo.</li><li>Se nenhum anúncio corresponder, o sistema informa que não há resultados.</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF09</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
@@ -106,10 +106,10 @@
             <span id="ustory-11"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US11</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu, como usuário regular ou anunciante, quero conversar pelo chat interno para negociar sem sair da plataforma.</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>Os dois usuários conseguem trocar mensagens no chat.</li><li>Cada mensagem enviada chega ao destinatário com atraso máximo de 500 ms.</li><li>Se o servidor cair ou o usuário se desconectar, as mensagens já enviadas continuam salvas e aparecem na conversa quando o serviço ou a conexão voltar.</li><li>O chat é 100% responsivo em celular, tablet e desktop.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>Os dois usuários conseguem trocar mensagens no chat.</li><li>Cada mensagem enviada chega ao destinatário com atraso máximo de 500 ms.</li><li>O chat é 100% responsivo em celular, tablet e desktop.</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF11, RNF03, RNF04, RNF07</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">13</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF11, RNF03, RNF04</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">8</td>
         </tr>
         <tr>
             <span id="ustory-12"></span>
@@ -146,6 +146,15 @@
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RNF05</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">2</td>
+        </tr>
+        <tr>
+            <span id="ustory-16"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US16</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Eu, como usuário regular ou anunciante, quero que minhas mensagens não se percam se a conexão cair para não perder o que já foi combinado na negociação.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>Se o servidor cair ou o usuário se desconectar, as mensagens já enviadas continuam salvas.</li><li>Quando o serviço ou a conexão voltar, as mensagens aparecem na conversa na ordem em que foram enviadas.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF11, RNF07</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
         </tr>
     </tbody>
 </table>
