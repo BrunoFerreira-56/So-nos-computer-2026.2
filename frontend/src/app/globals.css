@@ -1,0 +1,114 @@
+/*
+ * Estilos globais do UTMarket.
+ *
+ * Ordem importa: Tailwind primeiro, depois HeroUI, depois os tokens do Figma.
+ * Os tokens são a fonte da verdade visual — veja docs/CONVENCOES.md (seção "Tokens e tema").
+ */
+@import "tailwindcss";
+@import "@heroui/styles";
+@import "../styles/tokens.css";
+@import "../styles/heroui-overrides.css";
+
+/*
+ * O tema é controlado pelo botão lua/sol do header (next-themes grava a classe no <html>).
+ * Sobrescreve a variante do HeroUI, que também reagiria à preferência do sistema.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Tipografia do Figma (coleção "Texto/*"). Use estas classes em vez de tamanhos soltos. */
+@utility type-display {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+}
+@utility type-title-1 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+@utility type-title-2 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+@utility type-title-3 {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+@utility type-body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+@utility type-body-strong {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+@utility type-caption {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+@utility type-price {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* Ícones do Figma (public/icons/*.svg) renderizados como máscara para herdar `currentColor`. */
+@utility icon-mask {
+  display: inline-block;
+  flex-shrink: 0;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+/* Animação do logo no Figma (fade + subida de 6px, ease-out). */
+@keyframes logo-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@utility animate-logo-enter {
+  animation: logo-enter 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@layer base {
+  html {
+    background-color: var(--ut-bg-canvas);
+  }
+  body {
+    background-color: var(--ut-bg-canvas);
+    color: var(--ut-text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background-color: var(--ut-brand-primary);
+    color: var(--ut-brand-on-primary);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-enter {
+    animation: none;
+  }
+}

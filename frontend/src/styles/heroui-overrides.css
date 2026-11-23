@@ -1,0 +1,266 @@
+/*
+ * Ajustes dos componentes HeroUI v3 para o visual do Figma (biblioteca 25:2).
+ * Ficam na camada `components`, depois dos estilos do HeroUI, então vencem por ordem.
+ *
+ * Mapeamento de variantes de botão (Figma → HeroUI):
+ *   Primário   → variant="primary"
+ *   Secundário → variant="secondary"
+ *   Fantasma   → variant="ghost"
+ */
+@layer components {
+  /* ---------- Botão (25:144) ---------- */
+  .button {
+    height: 44px;
+    padding-inline: 16px;
+    border-radius: var(--radius-ut-md);
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    gap: 8px;
+  }
+  .button--sm {
+    height: 36px;
+    padding-inline: 12px;
+  }
+  .button--primary {
+    --button-bg: var(--ut-brand-primary);
+    --button-bg-hover: var(--ut-brand-primary-hover);
+    --button-bg-pressed: var(--ut-brand-primary-pressed);
+    --button-fg: var(--ut-brand-on-primary);
+  }
+  .button--secondary {
+    --button-bg: var(--ut-bg-canvas);
+    --button-bg-hover: var(--ut-bg-subtle);
+    --button-bg-pressed: var(--ut-bg-pressed);
+    --button-fg: var(--ut-text-primary);
+    border: 1px solid var(--ut-border-strong);
+  }
+  .button--ghost {
+    --button-bg: transparent;
+    --button-bg-hover: var(--ut-bg-subtle);
+    --button-bg-pressed: var(--ut-bg-pressed);
+    --button-fg: var(--ut-text-primary);
+  }
+  .button:disabled,
+  .button[aria-disabled="true"] {
+    opacity: 0.4;
+  }
+
+  /* ---------- Rótulo, descrição e erro de campo (26:60) ---------- */
+  /* No estado Erro do Figma só a borda e a mensagem ficam vermelhas; o rótulo continua escuro. */
+  .label,
+  .label--invalid,
+  [data-invalid="true"] .label {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--ut-text-primary);
+  }
+  .description {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--ut-text-secondary);
+  }
+  .field-error {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: var(--ut-error);
+  }
+  .textfield,
+  .select {
+    gap: 8px;
+  }
+
+  /* ---------- Campo de texto / grupo com ícone ---------- */
+  .input-group,
+  .input,
+  .textarea,
+  .select__trigger {
+    min-height: 44px;
+    border-radius: var(--radius-ut-md);
+    border: 1px solid var(--ut-border-default);
+    background-color: var(--ut-bg-canvas);
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--ut-text-primary);
+  }
+  .input,
+  .select__trigger {
+    padding: 12px;
+  }
+  .textarea {
+    padding: 12px;
+    min-height: 112px;
+  }
+  .input-group {
+    padding-inline: 12px;
+    gap: 8px;
+    --input-group-bg: var(--ut-bg-canvas);
+    --input-group-bg-hover: var(--ut-bg-canvas);
+    --input-group-bg-focus: var(--ut-bg-canvas);
+  }
+  .input-group__prefix,
+  .input-group__suffix {
+    color: var(--ut-icon-default);
+    padding: 0;
+  }
+  .input-group__input {
+    padding-inline: 0;
+  }
+  .input::placeholder,
+  .textarea::placeholder,
+  .input-group__input::placeholder {
+    color: var(--ut-text-muted);
+  }
+  .select__value[data-placeholder] {
+    color: var(--ut-text-muted);
+  }
+
+  /* Foco: borda azul (color/focus) — estado "Foco" do Figma */
+  .input-group:has([data-slot="input-group-input"]:focus),
+  .input-group:has([data-slot="input-group-textarea"]:focus),
+  .input:focus,
+  .textarea:focus,
+  .select__trigger[data-focus-visible="true"],
+  .select[data-open="true"] .select__trigger {
+    border-color: var(--ut-focus);
+    box-shadow: 0 0 0 2px var(--ut-focus);
+    outline: none;
+  }
+
+  /* Erro: borda vermelha (color/feedback/error) — estado "Erro" do Figma */
+  .input-group[data-invalid="true"],
+  .input[data-invalid="true"],
+  .input[aria-invalid="true"],
+  .textarea[data-invalid="true"],
+  .textarea[aria-invalid="true"],
+  .select[data-invalid="true"] .select__trigger {
+    border-color: var(--ut-error);
+    box-shadow: 0 0 0 1px var(--ut-error);
+  }
+
+  /* ---------- Rádio (83:325) ---------- */
+  .radio__content {
+    gap: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--ut-text-primary);
+  }
+  /* 32 px entre as opções, como na lista de motivos do D06b. */
+  .radio-group[data-orientation="vertical"] [data-slot="radio"] {
+    margin-top: 12px;
+  }
+  .radio-group[data-orientation="vertical"] [data-slot="radio"]:first-of-type {
+    margin-top: 0;
+  }
+  .radio__control {
+    border-color: var(--ut-border-strong);
+  }
+
+  /* ---------- Modal (D06b, D09c, D10b) ---------- */
+  /*
+   * Espaçamento vertical só por margens (16 px entre blocos, como no Figma).
+   * Um `gap` aqui somaria com as margens padrão do HeroUI (mt-2 / mt-5) e inflaria os espaços.
+   */
+  .modal__dialog {
+    border-radius: var(--radius-ut-lg);
+    background-color: var(--ut-bg-canvas);
+    color: var(--ut-text-primary);
+    padding: 24px;
+    gap: 0;
+  }
+  /* Linha do título com 40 px (altura do botão fechar); o texto não passa por baixo do botão. */
+  .modal__header {
+    min-height: 40px;
+    justify-content: center;
+    padding-inline-end: 48px;
+  }
+  .modal__header + .modal__body,
+  .modal__body + .modal__footer {
+    margin-top: 16px;
+  }
+  .modal__heading {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .modal__body {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--ut-text-secondary);
+  }
+  /* Alinhado ao padding do diálogo (24 px), no canto da linha do título. */
+  .modal__close-trigger {
+    top: 24px;
+    inset-inline-end: 24px;
+    border: 1px solid var(--ut-border-default);
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--ut-bg-canvas);
+    color: var(--ut-icon-default);
+  }
+  .modal__footer {
+    gap: 8px;
+  }
+
+  /* ---------- Menus (Dropdown / Select) ---------- */
+  .popover,
+  .select__popover {
+    border: 1px solid var(--ut-border-default);
+    border-radius: var(--radius-ut-md);
+    background-color: var(--ut-bg-canvas);
+  }
+  .menu-item,
+  .list-box-item {
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: var(--radius-ut-md);
+    color: var(--ut-text-primary);
+  }
+
+  /* ---------- Toast (26:111): fundo invertido, ícone de check ---------- */
+  .toast {
+    background-color: var(--ut-bg-inverse);
+    color: var(--ut-text-inverse);
+    border: none;
+    border-radius: var(--radius-ut-md);
+    padding: 12px 16px;
+    width: auto;
+    max-width: min(560px, calc(100vw - 32px));
+  }
+  .toast__title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--ut-text-inverse);
+  }
+  .toast__description {
+    color: var(--ut-text-inverse);
+    opacity: 0.8;
+  }
+  .toast__indicator {
+    color: var(--ut-text-inverse);
+  }
+  .toast__close-button {
+    color: var(--ut-text-inverse);
+  }
+
+  /* ---------- Skeleton (D03b) ---------- */
+  .skeleton {
+    background-color: var(--ut-bg-muted);
+    border-radius: var(--radius-ut-md);
+  }
+
+  /* ---------- Bottom sheet (M07b) ---------- */
+  .sheet__dialog {
+    background-color: var(--ut-bg-canvas);
+    color: var(--ut-text-primary);
+  }
+}

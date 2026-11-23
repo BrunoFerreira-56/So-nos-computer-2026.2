@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="145" height="73" viewBox="0 0 145 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Marca UTM" clip-path="url(#clip0_0_18)">
+<path id="UT" d="M14.1943 40.9189C14.1944 53.0016 18.0459 60.9219 28.8955 60.9219C39.7482 60.9219 43.6024 53.0016 43.6025 40.9189V0H144.885V11.167H88.3975V70.8701H74.2002V11.167H57.7939V45.2852C57.7939 64.2708 47.0463 72.0918 28.8955 72.0918C10.7447 72.0918 0 64.2708 0 45.2852V0H14.1943V40.9189Z" fill="#0D1117"/>
+<path id="M" d="M103 13.7914V71.2875H89V13.7914H103Z" fill="#FCBC00"/>
+<path id="M_2" d="M120.244 55.9736L113.756 58.6006L96.7559 16.6006L103.244 13.9736L120.244 55.9736Z" fill="#FCBC00"/>
+<path id="M_3" d="M120.5 57.2871V58.7871H113.5V57.2871H120.5Z" fill="#FCBC00"/>
+<path id="M_4" d="M137.255 15.5742L120.255 58.5742L113.745 56L130.745 13L137.255 15.5742Z" fill="#FCBC00"/>
+<path id="M_5" d="M145 55.2871V70.7822H131V55.2871H145Z" fill="#FCBC00"/>
+<path id="M_6" d="M145 13.2871V55.2871H131V13.2871H145Z" fill="#FCBC00"/>
+</g>
+<defs>
+<clipPath id="clip0_0_18">
+<rect width="145" height="73" fill="white"/>
+</clipPath>
+</defs>
+</svg>

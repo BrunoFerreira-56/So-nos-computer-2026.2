@@ -1,0 +1,200 @@
+/*
+ * Design tokens do UTMarket — espelho da coleção "Tokens" do Figma
+ * (arquivo Marketplace, página Components, nó 25:2), modos Claro e Escuro.
+ *
+ * Convenção: `--ut-<grupo>-<nome>` reflete `color/<grupo>/<nome>` do Figma.
+ * Valores marcados com (derivado) não existem no modo escuro do Figma e foram
+ * derivados dos tokens vizinhos.
+ */
+
+:root,
+.light,
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* brand */
+  --ut-brand-primary: #ffbe00;
+  --ut-brand-primary-hover: #dfa601;
+  --ut-brand-primary-pressed: #a97f04;
+  --ut-brand-on-primary: #171717;
+  --ut-brand-subtle: #fff9e9;
+  --ut-brand-text: #0858b8;
+  --ut-brand-selected: #171717;
+  --ut-brand-on-selected: #fafdfd;
+
+  /* bg */
+  --ut-bg-canvas: #ffffff;
+  --ut-bg-subtle: #fafdfd;
+  --ut-bg-muted: #ebebeb;
+  --ut-bg-pressed: #b0b0b0;
+  --ut-bg-inverse: #171717;
+  --ut-placeholder: #ebebeb;
+
+  /* border */
+  --ut-border-default: #ebebeb;
+  --ut-border-strong: #b0b0b0;
+
+  /* text */
+  --ut-text-primary: #171717;
+  --ut-text-secondary: #434343;
+  --ut-text-muted: #6d6d6d;
+  --ut-text-inverse: #fafdfd;
+  --ut-link: #171717;
+
+  /* icon */
+  --ut-icon-default: #434343;
+  --ut-icon-accent: #dfa601;
+
+  /* feedback */
+  --ut-error: #d93025;
+  --ut-error-subtle: #fdecea;
+  --ut-success: #1e7e34;
+  --ut-success-subtle: #e8f5ec;
+  --ut-info: #2678db;
+  --ut-info-subtle: #eaf4ff;
+  --ut-focus: #2678db;
+  --ut-rating: #ffbe00;
+
+  /* logo */
+  --ut-logo-base: #0d1117;
+  --ut-logo-accent: #fcbc00;
+
+  /* sombra do card em hover */
+  --ut-shadow-card: 0 8px 24px -4px rgba(15, 23, 41, 0.14);
+}
+
+.dark,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --ut-brand-primary: #ffbe00;
+  --ut-brand-primary-hover: #dfa601;
+  --ut-brand-primary-pressed: #a97f04;
+  --ut-brand-on-primary: #171717;
+  --ut-brand-subtle: #261d00;
+  --ut-brand-text: #94c4ff;
+  --ut-brand-selected: #fafdfd;
+  --ut-brand-on-selected: #171717;
+
+  --ut-bg-canvas: #0d1117;
+  --ut-bg-subtle: #161b22;
+  --ut-bg-muted: #262b33;
+  --ut-bg-pressed: #3a404a; /* (derivado) */
+  --ut-bg-inverse: #fafdfd;
+  --ut-placeholder: #262b33; /* (derivado) = bg/muted */
+
+  --ut-border-default: #2b3038;
+  --ut-border-strong: #6d6d6d;
+
+  --ut-text-primary: #fafdfd;
+  --ut-text-secondary: #b0b0b0;
+  --ut-text-muted: #6d6d6d;
+  --ut-text-inverse: #171717;
+  --ut-link: #fafdfd;
+
+  --ut-icon-default: #ebebeb;
+  --ut-icon-accent: #ffbe00;
+
+  --ut-error: #f28b82;
+  --ut-error-subtle: #3b1614;
+  --ut-success: #6dd58c;
+  --ut-success-subtle: #0f2a17;
+  --ut-info: #58a0f8;
+  --ut-info-subtle: #001d40;
+  --ut-focus: #58a0f8;
+  --ut-rating: #ffbe00;
+
+  --ut-logo-base: #fafdfd;
+  --ut-logo-accent: #fcbc00;
+
+  --ut-shadow-card: 0 8px 24px -4px rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * Ponte para o tema do HeroUI v3: os componentes do HeroUI passam a usar
+ * os mesmos tokens do Figma (nada de cores padrão do HeroUI na interface).
+ */
+:root,
+.light,
+[data-theme="light"],
+.dark,
+[data-theme="dark"] {
+  --background: var(--ut-bg-canvas);
+  --foreground: var(--ut-text-primary);
+  --surface: var(--ut-bg-canvas);
+  --surface-foreground: var(--ut-text-primary);
+  --overlay: var(--ut-bg-canvas);
+  --overlay-foreground: var(--ut-text-primary);
+  --muted: var(--ut-text-muted);
+  --default: var(--ut-bg-muted);
+  --default-foreground: var(--ut-text-primary);
+  --accent: var(--ut-brand-primary);
+  --accent-foreground: var(--ut-brand-on-primary);
+  --success: var(--ut-success);
+  --success-foreground: var(--ut-text-inverse);
+  --danger: var(--ut-error);
+  --danger-foreground: #ffffff;
+  --border: var(--ut-border-default);
+  --separator: var(--ut-border-default);
+  --focus: var(--ut-focus);
+  --link: var(--ut-link);
+
+  --field-background: var(--ut-bg-canvas);
+  --field-foreground: var(--ut-text-primary);
+  --field-placeholder: var(--ut-text-muted);
+  --field-border: var(--ut-border-default);
+
+  --radius: 6px;
+  --field-radius: 6px;
+  --field-border-width: 1px;
+}
+
+/* Tokens disponíveis como classes Tailwind: bg-ut-canvas, text-ut-secondary, border-ut-default… */
+@theme inline {
+  --font-heading: var(--font-league-spartan), "League Spartan", system-ui, sans-serif;
+  --font-body: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-sans: var(--font-body);
+
+  --color-brand: var(--ut-brand-primary);
+  --color-brand-hover: var(--ut-brand-primary-hover);
+  --color-brand-pressed: var(--ut-brand-primary-pressed);
+  --color-on-brand: var(--ut-brand-on-primary);
+  --color-brand-subtle: var(--ut-brand-subtle);
+  --color-brand-text: var(--ut-brand-text);
+  --color-selected: var(--ut-brand-selected);
+  --color-on-selected: var(--ut-brand-on-selected);
+
+  --color-ut-canvas: var(--ut-bg-canvas);
+  --color-ut-subtle: var(--ut-bg-subtle);
+  --color-ut-muted: var(--ut-bg-muted);
+  --color-ut-pressed: var(--ut-bg-pressed);
+  --color-ut-inverse: var(--ut-bg-inverse);
+  --color-ut-placeholder: var(--ut-placeholder);
+
+  --color-ut-border: var(--ut-border-default);
+  --color-ut-border-strong: var(--ut-border-strong);
+
+  --color-ut-text: var(--ut-text-primary);
+  --color-ut-text-secondary: var(--ut-text-secondary);
+  --color-ut-text-muted: var(--ut-text-muted);
+  --color-ut-text-inverse: var(--ut-text-inverse);
+  --color-ut-link: var(--ut-link);
+
+  --color-ut-icon: var(--ut-icon-default);
+  --color-ut-icon-accent: var(--ut-icon-accent);
+
+  --color-ut-error: var(--ut-error);
+  --color-ut-error-subtle: var(--ut-error-subtle);
+  --color-ut-success: var(--ut-success);
+  --color-ut-success-subtle: var(--ut-success-subtle);
+  --color-ut-info: var(--ut-info);
+  --color-ut-info-subtle: var(--ut-info-subtle);
+  --color-ut-focus: var(--ut-focus);
+  --color-ut-rating: var(--ut-rating);
+
+  --radius-ut-sm: 4px;
+  --radius-ut-md: 6px;
+  --radius-ut-lg: 12px;
+
+  --shadow-ut-card: var(--ut-shadow-card);
+}
