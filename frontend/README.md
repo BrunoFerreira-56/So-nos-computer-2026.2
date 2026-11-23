@@ -1,4 +1,4 @@
-# UTMarket — Frontend
+# [UTMarket — Frontend](https://dev-agil.vercel.app)
 
 Interface do **UTMarket**, marketplace para alunos e servidores da UTFPR, implementada a partir do
 [protótipo no Figma](https://www.figma.com/design/Ln6nbHHKBtO6WjIEM36aDL/Marketplace?node-id=1-3) e dos
@@ -8,6 +8,8 @@ requisitos em [`../Requisitos de Sistema`](../Requisitos%20de%20Sistema) e
 > **Escopo:** apenas o frontend. Não há backend: os dados vêm de uma **API mock** (Route Handlers do Next em
 > `src/app/api`) que guarda tudo em memória. As telas consomem essa API via Axios + TanStack Query exatamente como
 > consumiriam a API real.
+
+[Link de acesso](https://dev-agil.vercel.app)
 
 ## Sumário
 
@@ -39,7 +41,7 @@ requisitos em [`../Requisitos de Sistema`](../Requisitos%20de%20Sistema) e
 
 - **Node.js 20.9+** (testado com Node 26 LTS) e npm.
 
-## Como rodar
+## Como rodar localmente
 
 ```bash
 cd frontend
