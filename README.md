@@ -10,7 +10,15 @@ Integrantes do grupo:
 
 [João Gabriel Gretti de Lima](https://github.com/JoaoGretti) - 2649012
 
+[Rafael Romanelo](https://github.com/RomasRG) - 2601133
+
 [Tadashi Bello Nagashima](https://github.com/tadashinagashima) - 2677873
 
 Descrição do Projeto:
 O projeto consiste em um software de marketplace dedicado a alunos da UTFPR. Existirá um hub com os principais produtos disponíveis de forma dinâmica e intuitiva. Contendo um chat de discussão para conversar sobre o produto que está sendo vendido. 
+
+[Link do Figma](https://www.figma.com/design/Ln6nbHHKBtO6WjIEM36aDL/Marketplace?node-id=1-3&t=20rxYzmmHQ7Iqk8G-1)
+
+Link do Deploy: https://dev-agil.vercel.app
+
+Instruções de uso: [./frontend/README.md](./frontend/README.md)
