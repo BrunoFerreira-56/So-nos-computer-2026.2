@@ -10,8 +10,6 @@ Integrantes do grupo:
 
 [João Gabriel Gretti de Lima](https://github.com/JoaoGretti) - 2649012
 
-[Rafael Romanelo](https://github.com/RomasRG) - 2601133
-
 [Tadashi Bello Nagashima](https://github.com/tadashinagashima) - 2677873
 
 Descrição do Projeto:
